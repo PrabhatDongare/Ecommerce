@@ -2,7 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from "axios";
 import { toast } from 'react-toastify';
 
-const baseUrl = "http://localhost:3000/"
+// const baseUrl = "http://localhost:3000/"
+const baseUrl = "https://ecommerce-backend-5qv3.onrender.com/"
 // SHOW CATEGORY
 export const fetchShowCategory = createAsyncThunk("fetchShowCategory", async (pageNo , { rejectWithValue }) => {
     try {

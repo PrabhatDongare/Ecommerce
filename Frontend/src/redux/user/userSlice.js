@@ -3,7 +3,8 @@ import axios from "axios";
 import { toast } from 'react-toastify';
 
 // LOGIN
-const baseUrl = "http://localhost:3000/"
+// const baseUrl = "http://localhost:3000/"
+const baseUrl = "https://ecommerce-backend-5qv3.onrender.com/"
 export const fetchUserLogin = createAsyncThunk("fetchUserLogin", async ({ email, password }, { rejectWithValue }) => {
     try {
         const response = await axios.post(`${baseUrl}api/auth/login`, { email, password });
